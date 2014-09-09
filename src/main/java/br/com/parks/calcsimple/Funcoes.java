@@ -10,12 +10,13 @@ package br.com.parks.calcsimple;
  *
  * @author tiago
  */
-public class Calc {
-    public static void main(String[] args) {
-        Funcoes f=new Funcoes();
-        double resultado=f.multiplica(8, 45);
-        System.out.println(resultado);
-        resultado=f.divide(8, 4);
-        System.out.println(resultado);
+public class Funcoes {
+    
+    public double multiplica(double num1, double num2){
+        return num1*num2;
+    }
+    
+    public double divide(double num1, double num2){
+        return num1/num2;
     }
 }
