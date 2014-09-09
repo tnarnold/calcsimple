@@ -21,5 +21,8 @@ public class Calc {
         System.out.println("soma: " + f.soma(10, 15));
         System.out.println("soma: " + f.subtrai(10, 15));
         
+        Complexos c=new Complexos();
+        c.executaComplexo();
+        
     }
 }
