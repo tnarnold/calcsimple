@@ -19,4 +19,12 @@ public class Funcoes {
     public double divide(double num1, double num2){
         return num1/num2;
     }
+    
+    public double soma (double a, double b){
+        return a + b;
+    }
+    
+    public double subtrai (double a, double b){
+        return a - b;
+    }
 }

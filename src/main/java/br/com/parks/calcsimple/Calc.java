@@ -17,5 +17,9 @@ public class Calc {
         System.out.println(resultado);
         resultado=f.divide(8, 4);
         System.out.println(resultado);
+        
+        System.out.println("soma: " + f.soma(10, 15));
+        System.out.println("soma: " + f.subtrai(10, 15));
+        
     }
 }
