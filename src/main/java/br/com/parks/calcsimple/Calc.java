@@ -3,26 +3,42 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package br.com.parks.calcsimple;
+
+import java.util.Scanner;
 
 /**
  *
  * @author tiago
  */
 public class Calc {
+
     public static void main(String[] args) {
-        Funcoes f=new Funcoes();
-        double resultado=f.multiplica(8, 45);
-        System.out.println(resultado);
-        resultado=f.divide(8, 4);
-        System.out.println(resultado);
-        
-        System.out.println("soma: " + f.soma(10, 15));
-        System.out.println("soma: " + f.subtrai(10, 15));
-        
-        Complexos c=new Complexos();
-        c.executaComplexo();
-        
+
+        System.out.println("Escolha uma operação:\n"
+                + "a) Somar\n"
+                + "b) Subtrair\n"
+                + "c) Multiplicar\n"
+                + "d) Dividir\n");
+
+        Scanner escolha = new Scanner(System.in);
+        String opt = escolha.nextLine();
+        switch (opt) {
+            case "a":
+                System.out.println("Implementar soma");
+                break;
+            case "b":
+                System.out.println("Implementar subtrair");
+                break;
+            case "c":
+                System.out.println("Implementar multiplicasr");
+                break;
+            case "d":
+                System.out.println("Implementar dividir");
+                break;
+            default:
+                break;
+        }
+
     }
 }
